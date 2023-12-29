@@ -1,0 +1,66 @@
+{
+  "contacts": [
+    {
+      "id": "random0",
+      "name": "Natalia",
+      "university": "Uniwersytet Gdański",
+      "email": "natalia@ug.edu.pl",
+      "field": "Neurobiology",
+      "mobile": "665439961",
+      "photo": "https://www.svgrepo.com/show/73438/student.svg",
+      "groupId": "2"
+    },
+    {
+      "id": "random1",
+      "name": "Jakub",
+      "university": "Uniwersytet Gdański",
+      "email": "jakub@ug.edu.pl",
+      "field": "Economy",
+      "mobile": "215466761",
+      "photo": "https://www.svgrepo.com/show/34094/teacher.svg",
+      "groupId": "3"
+    },
+    {
+      "id": "random2",
+      "name": "Dominika",
+      "university": "Uniwersytet Gdański",
+      "email": "dominika@ug.edu.pl",
+      "field": "International business",
+      "mobile": "264278991",
+      "photo": "https://www.svgrepo.com/show/165632/teacher.svg",
+      "groupId": "3"
+    },
+    {
+      "name": "Arek",
+      "photo": "https://e7.pngegg.com/pngimages/349/288/png-clipart-teacher-education-student-course-school-avatar-child-face-thumbnail.png",
+      "email": "arek@ug.edu.pl",
+      "mobile": 444555666,
+      "university": "UG",
+      "field": "Biology",
+      "groupId": "2",
+      "id": "uW6awBq"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "Mathematics, Physics and IT"
+    },
+    {
+      "id": "2",
+      "name": "Biology"
+    },
+    {
+      "id": "3",
+      "name": "Economics"
+    },
+    {
+      "id": "4",
+      "name": "Filology"
+    },
+    {
+      "id": "5",
+      "name": "Social sciences"
+    }
+  ]
+}

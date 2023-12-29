@@ -1,0 +1,84 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col">
+            <p class="h3 fw-bold text-info">Edit contact</p>
+            <p class="fst-italic">This is the place where you can edit student's contact</p>
+        </div>
+    </div>
+</div>
+
+<!--Editing a new student's contact-->
+<div class="container">
+<div class="row">
+    <div class="col-sm-4">
+        <form (submit)="submitUpdate()">
+        <div class="mb-2">
+            <input 
+            [(ngModel)]="contact.name"
+            [value]="contact.name"
+            name = "name"
+            required = "true"
+            type="text" class="form-control" placeholder="Name">
+        </div>
+        <div class="mb-2">
+            <input 
+            [(ngModel)]="contact.photo"
+            [value]="contact.photo"
+            name = "photo"
+            required = "true"
+            type="text" class="form-control" placeholder="Photo URL">
+        </div>
+        <div class="mb-2">
+            <input 
+            [(ngModel)]="contact.email"
+            [value]="contact.email"
+            name = "email"
+            required = "true"
+            type="email" class="form-control" placeholder="E-mail">
+        </div>
+        <div class="mb-2">
+            <input 
+            [(ngModel)]="contact.mobile"
+            [value]="contact.mobile"
+            name = "mobile"
+            required = "true"
+            type="number" class="form-control" placeholder="Mobile">
+        </div>
+        <div class="mb-2">
+            <input 
+            [(ngModel)]="contact.university"
+            [value]="contact.university"
+            name = "university"
+            required = "true"
+            type="text" class="form-control" placeholder="University">
+        </div>
+        <div class="mb-2">
+            <input 
+            [(ngModel)]="contact.field"
+            [value]="contact.field"
+            name = "field"
+            required = "true"
+            type="text" class="form-control" placeholder="Field">
+        </div>
+        <div class="mb-2">
+            <select 
+            [(ngModel)]="contact.groupId"
+            [value]="contact.groupId"
+            name = "groupId"
+            required = "true"
+            class="form-control">
+                <option value="">Select a faculty</option>
+                <option [value]="group.id" *ngFor="let group of groups">{{group.name}}</option>
+            </select>
+        </div>
+        <div class="mb-2">
+            <input class="btn btn-info" value="Update" type="submit">
+            <a routerLink="/" class="btn btn-dark ms-2">Close</a>
+        </div>
+    </form>
+    </div>
+    <div class="col-sm-4">
+        <img alt="" class="contact-img" [src]="contact.photo">
+    </div>
+</div>
+</div>
